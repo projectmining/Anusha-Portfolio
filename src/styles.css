@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #0B1220;
+  --card: #0F172A;
+  --muted: #9CA3AF;
+}
+
+body{
+  background: var(--bg);
+}
+
+.card{
+  @apply bg-slate-900/60 backdrop-blur border border-slate-800 rounded-2xl shadow-soft;
+}
+
+h1,h2,h3{
+  @apply font-semibold;
+}
